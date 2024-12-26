@@ -26,6 +26,7 @@ h2 {
     color: #0073e6;
 }
 
+/* Button Styles */
 button {
     background: #0073e6;
     color: white;
@@ -34,12 +35,14 @@ button {
     cursor: pointer;
     border-radius: 5px;
     font-size: 16px;
+    transition: background 0.3s ease;
 }
 
 button:hover {
     background: #005bb5;
 }
 
+/* Footer Styles */
 footer {
     text-align: center;
     padding: 10px;
@@ -48,4 +51,79 @@ footer {
     position: fixed;
     bottom: 0;
     width: 100%;
+}
+
+/* Responsive Styles */
+@media (max-width: 600px) {
+    /* For mobile devices */
+    header {
+        padding: 15px 0;
+    }
+
+    header h1 {
+        font-size: 20px;
+    }
+
+    main {
+        padding: 10px;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+
+    button {
+        width: 100%; /* Make button full-width on mobile */
+        padding: 12px 0;
+        font-size: 18px;
+    }
+
+    footer {
+        padding: 15px;
+    }
+}
+
+@media (max-width: 1024px) and (min-width: 601px) {
+    /* For tablets (portrait) */
+    header h1 {
+        font-size: 24px;
+    }
+
+    main {
+        padding: 15px;
+    }
+
+    h2 {
+        font-size: 22px;
+    }
+
+    button {
+        width: 80%; /* Make button take 80% width on tablets */
+        padding: 12px 0;
+        font-size: 18px;
+    }
+}
+
+@media (min-width: 1025px) {
+    /* For larger screens (desktops) */
+    header {
+        padding: 30px 0;
+    }
+
+    header h1 {
+        font-size: 32px;
+    }
+
+    main {
+        padding: 20px;
+    }
+
+    h2 {
+        font-size: 26px;
+    }
+
+    button {
+        width: auto;
+        font-size: 16px;
+    }
 }
